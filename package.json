@@ -1,0 +1,19 @@
+{
+  "name": "jwt_passport",
+  "version": "1.0.0",
+  "description": "A demo for OAuth with JSon Web Token using passport module of NPM",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Soumodip Sinha",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "jwt-simple": "^0.5.1",
+    "passport": "^0.4.0",
+    "passport-jwt": "^3.0.1"
+  }
+}
