@@ -1,12 +1,12 @@
 var users = [{  
     id: 101,
     name: "Soumodip Sinha",
-    email: "soumodip.sinha@mindtree.com",
+    email: "soumodip.sinha@mail.com",
     password: "pass123"
 }, {
     id: 202,
     name: "Ram",
-    email: "ram@mindtree.com",
+    email: "ram@mail.com",
     password: "pass123"
 }];
 
