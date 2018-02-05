@@ -24,7 +24,7 @@ app.get("/userDebug", (req, res, next) => {
     console.log(req.get('Authorization'))
     next()
 }, function(req, res){
-    res.json("debugging")
+    res.json("Debugging. See token in console.")
 });
 
 app.post("/token", (req, res) => {  
