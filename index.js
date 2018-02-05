@@ -17,7 +17,8 @@ app.get("/", (req, res) => {
 });
 
 app.get("/user", auth.authenticate(), (req, res) => { 
-    req.json({message: "Success! You can not see this without a token"})
+    res.json({message: "Success! You can not see this without a token"})
+    // Or send user details in response
 });
 
 app.get("/userDebug", (req, res, next) => {
@@ -37,7 +38,7 @@ if (req.body.email && req.body.password) {
     if (user) {
         let payload = {
             id: user.id,
-            exp: cfg.expiresIn
+            expiresIn: cfg.expiresIn
         };
         let token = jwt.encode(payload, cfg.jwtSecret);
         res.json({
